@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Awaiz Ahmed | Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Starter for Awaiz Ahmed's personal portfolio website, built with Create React App and Tailwind CSS. The project is still an early scaffold.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Create React App](https://img.shields.io/badge/Create_React_App-5-09D3AC?logo=createreactapp&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This repository holds the initial setup for a portfolio site. The page metadata describes Awaiz Ahmed as a Roblox developer, UI/UX designer, GFX artist and web developer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Current status:** `src/App.js` still renders the default Create React App welcome screen. The Tailwind theme and global styles are configured, and placeholder component files exist but are empty.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What's Set Up
 
-### `npm test`
+- **Tailwind CSS theme** (`tailwind.config.js`): class-based dark mode, a custom palette (purple primary, gold secondary, light/dark background and text colors), Poppins and Montserrat font families, and `fade-in-up` / `slide-in-left` animations.
+- **Global styles** (`src/index.css`): Google Fonts import, themed body colors for light and dark, smooth scrolling and a custom scrollbar.
+- **HTML shell** (`public/index.html`): portfolio title, meta description, theme color, custom favicon and app icons.
+- **Placeholder components** in `src/components/common/`: `Navbar`, `Footer`, `Button`, `Section`, `AccordionItem` and `ThemeToggle`. All six files are currently empty.
+- **Installed but not yet used:** React Router, Framer Motion, Heroicons, EmailJS (`@emailjs/browser`) and `gh-pages`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- [React 19](https://react.dev) with [Create React App](https://create-react-app.dev) (`react-scripts` 5)
+- [Tailwind CSS 3.4](https://tailwindcss.com) with PostCSS and Autoprefixer
+- Jest and React Testing Library (via `react-scripts`) and `web-vitals`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prerequisites: Node.js and npm.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm start          # dev server on http://localhost:3000
+npm test           # Jest in watch mode (default CRA test)
+npm run build      # production build to build/
+npm run eject      # one-way CRA eject (not usually needed)
+```
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+public/
+├── index.html           # title, meta description, theme color
+├── favicon.ico, logo192.png, logo512.png
+├── manifest.json
+└── robots.txt
+src/
+├── App.js               # default CRA component (to be replaced)
+├── App.css
+├── App.test.js          # default CRA test
+├── index.js             # entry point; calls reportWebVitals
+├── index.css            # Tailwind directives, fonts, global styles
+├── components/common/   # empty placeholder components
+├── reportWebVitals.js
+└── setupTests.js
+tailwind.config.js
+postcss.config.js
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+No deployment is configured yet. `gh-pages` is a dev dependency, but `package.json` has no `homepage` field or `deploy` script. `npm run build` produces a static `build/` folder that any static host can serve.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by [Awaiz Ahmed](https://github.com/4waiz) · Kanban Studios
